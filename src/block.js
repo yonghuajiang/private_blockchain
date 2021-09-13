@@ -50,9 +50,9 @@ class Block {
               resolve(true);
             } else {
               self.hash = currentHash;
-              reject(false);}
+              resolve(false);}
             // Returning the Block is valid
-
+            reject(false);
         });
     }
 
